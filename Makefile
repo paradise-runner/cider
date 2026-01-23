@@ -1,6 +1,6 @@
 VERSION ?= dev
 
-.PHONY: build build-go build-bash test test-go test-go-integration test-unit release clean
+.PHONY: build build-go test test-go test-go-integration test-unit release clean
 
 # Build Go version (default)
 build: build-go

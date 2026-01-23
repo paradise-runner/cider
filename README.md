@@ -1,6 +1,6 @@
-# Go Implementation of Stash
+# Cider - Apple Notes CLI
 
-This directory contains a complete Go reimplementation of the `stash` CLI tool, which was originally built with bash and bashly.
+A Go-based CLI tool for syncing markdown files with Apple Notes. This application was translated from [`shakedlokits/stash`](https://github.com/shakedlokits/stash), the original bash-based implementation.
 
 ## Status
 
@@ -27,7 +27,7 @@ make build VERSION=1.0.0
 make clean
 ```
 
-The binary will be created at `dist/stash-go`.
+The binary will be created at `dist/cider`.
 
 ## Testing
 
@@ -42,7 +42,7 @@ make test-go-integration
 ## Project Structure
 
 ```
-cmd/stash/            # Entry point
+cmd/cider/             # Entry point
   main.go
 
 internal/
@@ -84,16 +84,16 @@ The Go version has the exact same CLI interface as the bash version:
 
 ```bash
 # Push a file to Apple Notes
-./dist/stash-go push my-note.md
+./dist/cider push my-note.md
 
 # Pull changes from Apple Notes
-./dist/stash-go pull my-note.md
+./dist/cider pull my-note.md
 
 # Show differences
-./dist/stash-go diff my-note.md
+./dist/cider diff my-note.md
 
 # Generate shell completions
-./dist/stash-go completion bash
+./dist/cider completion bash
 ```
 
 ## Comparison to Bash Version
@@ -129,7 +129,7 @@ The Go implementation maintains 100% feature parity with the bash version:
 ### Running locally
 
 ```bash
-go run ./cmd/stash <command> <args>
+go run ./cmd/cider <command> <args>
 ```
 
 ### Version injection
@@ -137,5 +137,5 @@ go run ./cmd/stash <command> <args>
 Version is set via ldflags at build time:
 
 ```bash
-go build -ldflags "-X 'main.version=1.0.0'" -o stash ./cmd/stash
+go build -ldflags "-X 'main.version=1.0.0'" -o cider ./cmd/cider
 ```

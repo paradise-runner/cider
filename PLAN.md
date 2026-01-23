@@ -83,7 +83,7 @@ go.sum
 **Goal**: Set up Go project structure with Cobra CLI framework.
 
 **Tasks**:
-1. Initialize Go module: `go mod init github.com/shakedlokits/stash`
+1. Initialize Go module: `go mod init github.com/paradise-runner/cider`
 2. Install Cobra: `go get github.com/spf13/cobra@latest`
 3. Create directory structure:
    - `cmd/stash/main.go` - entry point

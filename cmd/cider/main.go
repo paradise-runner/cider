@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/shakedlokits/stash/internal/cli"
+	"github.com/paradise-runner/cider/internal/cli"
 )
 
 // version is set via ldflags at build time

@@ -3,10 +3,10 @@ package cli
 import (
 	"fmt"
 
-	"github.com/shakedlokits/stash/internal/convert"
-	"github.com/shakedlokits/stash/internal/frontmatter"
-	"github.com/shakedlokits/stash/internal/markdown"
-	"github.com/shakedlokits/stash/internal/notes"
+	"github.com/paradise-runner/cider/internal/convert"
+	"github.com/paradise-runner/cider/internal/frontmatter"
+	"github.com/paradise-runner/cider/internal/markdown"
+	"github.com/paradise-runner/cider/internal/notes"
 	"github.com/spf13/cobra"
 )
 

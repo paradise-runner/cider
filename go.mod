@@ -1,4 +1,4 @@
-module github.com/shakedlokits/stash
+module github.com/paradise-runner/cider
 
 go 1.21.1
 

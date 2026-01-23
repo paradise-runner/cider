@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/shakedlokits/stash/internal/convert"
+	"github.com/paradise-runner/cider/internal/convert"
 	"github.com/spf13/cobra"
 )
 
