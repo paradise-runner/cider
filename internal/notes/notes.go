@@ -17,8 +17,9 @@ func NewClient() *Client {
 
 // Create creates a new note with HTML content and returns the note ID
 func (c *Client) Create(htmlContent string) (string, error) {
-	// Escape double quotes for AppleScript
-	escapedContent := strings.ReplaceAll(htmlContent, `"`, `\"`)
+	// Escape backslashes first, then double quotes for AppleScript
+	escapedContent := strings.ReplaceAll(htmlContent, `\`, `\\`)
+	escapedContent = strings.ReplaceAll(escapedContent, `"`, `\"`)
 
 	script := fmt.Sprintf(`
 tell application "Notes"
@@ -82,8 +83,9 @@ end tell
 
 // Update updates the HTML body content of an existing note
 func (c *Client) Update(noteID, htmlContent string) error {
-	// Escape double quotes for AppleScript
-	escapedContent := strings.ReplaceAll(htmlContent, `"`, `\"`)
+	// Escape backslashes first, then double quotes for AppleScript
+	escapedContent := strings.ReplaceAll(htmlContent, `\`, `\\`)
+	escapedContent = strings.ReplaceAll(escapedContent, `"`, `\"`)
 
 	script := fmt.Sprintf(`
 tell application "Notes"
