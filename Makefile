@@ -21,5 +21,5 @@ test-unit:
 
 # Clean build artifacts
 clean:
-	rm -f dist/stash-go
-	rm -f stash-go
+	rm -f dist/cider-go
+	rm -f cider-go

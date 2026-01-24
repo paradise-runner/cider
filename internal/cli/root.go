@@ -16,9 +16,9 @@ func SetVersion(v string) {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "stash",
+	Use:   "cider",
 	Short: "Bidirectionally sync Markdown files with Apple Notes",
-	Long:  `Stash allows you to push Markdown files to Apple Notes and pull changes back, using front-matter to track state.`,
+	Long:  `Cider allows you to push Markdown files to Apple Notes and pull changes back, using front-matter to track state.`,
 	PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 		// Check for pandoc availability (skip for help and completion commands)
 		if cmd.Name() != "help" && cmd.Name() != "completion" && cmd.Name() != "__complete" {

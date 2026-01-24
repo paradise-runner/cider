@@ -1,0 +1,242 @@
+<div><b><span style="font-size: 24px">CommonMark Comprehensive Example</span></b></div>
+<div>A complete guide to CommonMark markdown features for testing translation.</div>
+<div><b><span style="font-size: 18px">Preliminaries</span></b></div>
+<div><b>Backslash Escapes</b></div>
+<div>!&quot#$%&amp'()*+,-./:;&lt=&gt?@[\]^_`{|}~</div>
+<div>Escaping special characters: *not emphasized*, &ltbr/&gt not a tag, [not a link](/foo), `not code`</div>
+<div>Escaped backslash: \<i>emphasis</i><br></div>
+<div>Backslash at end of line (hard line break):</div>
+<div><font face="Courier"><tt>foo\</tt></font></div>
+<div><font face="Courier"><tt>bar</tt></font></div>
+<div><b>Entity and Numeric Character References</b></div>
+<div>Named entities:   &amp © Æ Ď ¾ ℋ<br></div>
+<div>Decimal numeric references: # Ӓ Ϡ<br></div>
+<div>Hexadecimal numeric references: &quot ആ ಫ<br></div>
+<div>Invalid entities: &ampnbsp &ampx; &amp#; &amp#x; &ampMadeUpEntity;</div>
+<div><b><span style="font-size: 18px">Blocks and Inlines</span></b></div>
+<div><b>Thematic Breaks</b></div>
+<div><font color="#808080"><br></font></div>
+<div><b>ATX Headings</b></div>
+<div><b><span style="font-size: 24px">H1 Heading</span></b></div>
+<div><b><span style="font-size: 18px">H2 Heading</span></b></div>
+<div><b>H3 Heading</b></div>
+<div><b>H4 Heading</b></div>
+<div><b>H5 Heading</b></div>
+<div><b>H6 Heading</b></div>
+<div><b><span style="font-size: 24px">Heading with </span></b><b><i><span style="font-size: 24px">emphasis</span></i></b><b><span style="font-size: 24px"> and *escaped*</span></b></div>
+<div><b><span style="font-size: 24px">foo with spaces</span></b></div>
+<div><b>Indented heading</b></div>
+<div><b><span style="font-size: 18px">Two spaces</span></b></div>
+<div><b><span style="font-size: 24px">Three spaces</span></b></div>
+<div><b><span style="font-size: 18px">foo</span></b></div>
+<div><b>bar</b></div>
+<div><b><span style="font-size: 24px">foo</span></b></div>
+<div><b>foo</b></div>
+<div><b>foo</b></div>
+<div><b>foo ### b</b></div>
+<div><b><span style="font-size: 24px">foo#</span></b></div>
+<div><b>foo ###</b></div>
+<div><b><span style="font-size: 18px">foo ###</span></b></div>
+<div><b><span style="font-size: 24px">foo #</span></b></div>
+<div>Foo bar</div>
+<div><b><span style="font-size: 24px">Heading can interrupt paragraph</span></b></div>
+<div>Bar foo</div>
+<div><b><span style="font-size: 18px"><br></span></b></div>
+<div><b><span style="font-size: 24px"><br></span></b></div>
+<div><b><br></b></div>
+<div><font color="#808080"><br></font></div>
+<div><b><span style="font-size: 24px">Foo </span></b><b><i><span style="font-size: 24px">bar baz</span></i></b><b><span style="font-size: 24px"><br></span></b></div>
+<div><b><span style="font-size: 24px">Foo </span></b><b><i><span style="font-size: 24px">bar baz</span></i></b><b><span style="font-size: 24px">→</span></b></div>
+<div>Foo</div>
+<div><b><span style="font-size: 18px">Foo</span></b></div>
+<div>`</div>
+<div><b><span style="font-size: 18px">&lta title=&quota lot</span></b></div>
+<div><b>Fenced Code Blocks</b></div>
+<div><font face="Courier"><tt>simple code block</tt></font></div>
+<div><font face="Courier"><tt>let x = 42;</tt></font></div>
+<div><font face="Courier"><tt>console.log(x);</tt></font></div>
+<div><font face="Courier"><tt>def hello():</tt></font></div>
+<div><font face="Courier"><tt>    print(&quotworld&quot)</tt></font></div>
+<div><font face="Courier"><tt>tildes work too</tt></font></div>
+<div><font face="Courier"><tt>def foo():</tt></font></div>
+<div><font face="Courier"><tt>    pass</tt></font></div>
+<div><font face="Courier"><tt>let x = 42;</tt></font></div>
+<div><font face="Courier"><tt>spaces in fence</tt></font></div>
+<div><font face="Courier"><tt>info string</tt></font></div>
+<div><font face="Courier"><tt>baz</tt></font></div>
+<div><font face="Courier"><tt>info with escape</tt></font></div>
+<div><b>Link Reference Definitions</b></div>
+<div><b>Blank Lines</b></div>
+<div>aaa</div>
+<div>bbb</div>
+<ul>
+<li>foo</li>
+<li>bar</li>
+</ul>
+<div><font face="Courier"><tt>foo</tt></font></div>
+<div><font face="Courier"><tt>bar</tt></font></div>
+<div><font face="Courier"><tt>foo</tt></font></div>
+<div>foo - bar</div>
+<div>foo</div>
+<div>bar<br></div>
+<div><b>Lists</b></div>
+<ul>
+<li>foo</li>
+<li>bar</li>
+<li>foo</li>
+<li>bar</li>
+<li>foo</li>
+<li>bar</li>
+<li>foo</li>
+<li>bar</li>
+<li>foo</li>
+<li>bar</li>
+<li>baz</li>
+<li><br></li>
+<li><br></li>
+<li><br></li>
+<li>foo</li>
+<ul>
+<li>bar</li>
+</ul>
+<li>baz</li>
+<li>foo bar</li>
+<li>baz</li>
+<li>foo</li>
+<li>bar</li>
+<ul>
+<li>baz</li>
+<ul>
+<li>boo</li>
+</ul>
+</ul>
+<li>foo</li>
+<li>bar</li>
+<li>baz</li>
+<li>a</li>
+<li>b</li>
+<ul>
+<li>c</li>
+<li>d</li>
+<ul>
+<li>e</li>
+<li>f</li>
+</ul>
+</ul>
+</ul>
+<div><b><span style="font-size: 18px">Advanced Examples</span></b></div>
+<div><b>Nested Lists with Mixed Types</b></div>
+<ol>
+<li>First item</li>
+<ul>
+<li>Nested bullet</li>
+<li>Another bullet</li>
+</ul>
+<li>Second item</li>
+<ol>
+<li>Nested ordered</li>
+<li>Another ordered</li>
+</ol>
+<li>Third item</li>
+</ol>
+<div><b>Code with Complex Formatting</b></div>
+<div>This is a <font face="Courier"><span style="font-size: 12px">code span with *emphasis*</span></font> inside.</div>
+<div><font face="Courier"><tt>def function(arg1, arg2):</tt></font></div>
+<div><font face="Courier"><tt>    &quot&quot&quot</tt></font></div>
+<div><font face="Courier"><tt>    Docstring</tt></font></div>
+<div><font face="Courier"><tt>    &quot&quot&quot</tt></font></div>
+<div><font face="Courier"><tt>    return arg1 + arg2</tt></font></div>
+<div><b>Blockquote with Nested Elements</b></div>
+<div><b><span style="font-size: 24px">Heading in blockquote</span></b><b><span style="font-size: 24px"><br></span></b></div>
+<div>Paragraph in blockquote<br></div>
+<ul>
+<li>List in blockquote</li>
+<ul>
+<li>Nested item</li>
+</ul>
+</ul>
+<div>Nested blockquote</div>
+<div><font face="Courier"><tt>code in blockquote</tt></font><span style="font-size: 13px"><tt><br></tt></span></div>
+<div><b>Complex Links and Images</b></div>
+<div><u>Link with </u><b><u>bold</u></b><u> and </u><i><u>italic</u></i><br></div>
+<div><img style="max-width: 100%; max-height: 100%;" src="data:image/png;base64,(null)"/><br></div>
+<div><u>Link with </u><u><font face="Courier"><span style="font-size: 12px">code</span></font></u><u> in text</u><br></div>
+<div><b>Mixed Inline Elements</b></div>
+<div>This paragraph has <b>bold</b>, <i>italic</i>, <b><i>bold italic</i></b>, <font face="Courier"><span style="font-size: 12px">code</span></font>, <u>link</u>, and </div>
+<div><br></div>
+<div>.</div>
+<div>Escaped characters: ! @ # $ % ^ &amp * ( ) + - = { } [ ] | \ : ; &quot ' &lt &gt , . ? /</div>
+<div><b>Tables (Extended Markdown)</b></div>
+<div><object><table cellspacing="0" cellpadding="0" style="border-collapse: collapse; direction: ltr">
+<tbody>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Header 1</b></div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div><b>Header 2</b></div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Cell 1</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Cell 2</div>
+</td></tr>
+<tr><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Cell 3</div>
+</td><td valign="top" style="border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #ccc; padding: 3.0px 5.0px 3.0px 5.0px; min-width: 70px"><div>Cell 4</div>
+</td></tr>
+</tbody>
+</table></object><br></div>
+<div><b>Strikethrough (Extended)</b></div>
+<div><strike>strikethrough text</strike><br></div>
+<div><b>Subscript and Superscript (Extended)</b></div>
+<div>H~2~O</div>
+<div>E=mc^2^</div>
+<div><b>Footnotes (Extended)</b></div>
+<div>This is a footnote<u><font color="#0000EE">1</font></u>.</div>
+<div>Foo bar</div>
+<div>Bar</div>
+<ul>
+<li>Item 1</li>
+</ul>
+<div><font color="#808080"><br></font></div>
+<div><b>Lazy Continuation Lines</b></div>
+<div>Blockquote line 1 continuation without &gt<br></div>
+<div><b>Emphasis Edge Cases</b></div>
+<div><i>foo bar baz</i><br></div>
+<div><b><i>foo</i></b><i> bar</i><br></div>
+<div><i>foo bar baz bim</i> qux*</div>
+<div><i>foo </i><b><i>bar</i></b><i> baz</i><br></div>
+<div><b>foo </b><b><i>bar</i></b><b> baz</b><br></div>
+<div><b><i>foo bar baz</i></b><br></div>
+<div><b>foo bar baz</b><br></div>
+<div><b><i>foo</i></b><i> bar</i>_</div>
+<div><b>Code Span Edge Cases</b></div>
+<div><font face="Courier"><tt>foo ` bar</tt></font><span style="font-size: 13px"><tt><br></tt></span></div>
+<div><font face="Courier"><tt>``</tt></font><span style="font-size: 13px"><tt><br></tt></span></div>
+<div><font face="Courier"><tt>`` </tt></font><span style="font-size: 13px"><tt><br></tt></span></div>
+<div><b>Link Edge Cases</b></div>
+<div><u>foo</u><br></div>
+<div><u>foo</u><br></div>
+<div><b>Character Encoding</b></div>
+<div>ℋ ⅆ ∲<br></div>
+<div>Æ Ď ¾</div>
+<div><b>Control Characters</b></div>
+<div>Null replacement: U+0000 becomes U+FFFD</div>
+<div><b>Precedence Examples</b></div>
+<ul>
+<li>`one</li>
+<li>two`</li>
+</ul>
+<div><font color="#808080"><br></font></div>
+<div><b><span style="font-size: 18px">Translation Testing Notes</span></b></div>
+<div>This file is designed to test markdown translation fidelity by including:</div>
+<ol>
+<li><b>Character escaping</b> - Backslash escapes and special characters</li>
+<li><b>Entity references</b> - HTML entities and numeric character references</li>
+<li><b>Block structures</b> - All heading levels, lists, blockquotes, code blocks</li>
+<li><b>Inline formatting</b> - Emphasis, strong, code, links, images</li>
+<li><b>Edge cases</b> - Empty elements, mixed nesting, unusual indentation</li>
+<li><b>Precedence rules</b> - Cases where block or inline structure takes precedence</li>
+<li><b>Whitespace handling</b> - Tabs, spaces, blank lines</li>
+<li><b>Nested structures</b> - Lists within lists, blockquotes with lists, etc.</li>
+<li><b>Special syntax</b> - Setext headings, reference links, HTML blocks</li>
+<li><b>Internationalization</b> - Unicode characters and combining marks</li>
+</ol>
+<div><font color="#808080"><br></font></div>
+<ol>
+<li>The footnote content.<u><font color="#0000EE">↩︎</font></u><br></li>
+</ol>

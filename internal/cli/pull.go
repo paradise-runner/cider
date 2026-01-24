@@ -2,6 +2,7 @@ package cli
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/paradise-runner/cider/internal/convert"
 	"github.com/paradise-runner/cider/internal/frontmatter"
