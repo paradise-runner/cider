@@ -2,18 +2,6 @@
 
 A Go-based CLI tool for syncing markdown files with Apple Notes. This application was translated from [`shakedlokits/cider`](https://github.com/shakedlokits/cider), the original bash-based implementation.
 
-## Status
-
-✅ **Complete** - All features from the bash version have been implemented:
-
-- ✅ Push markdown files to Apple Notes (create or update)
-- ✅ Pull content from Apple Notes to markdown files
-- ✅ Show diffs between local files and Apple Notes
-- ✅ Shell completions (bash, zsh, fish, powershell)
-- ✅ Frontmatter management (YAML with `apple_notes_id`)
-- ✅ Markdown ↔ HTML conversion via pandoc
-- ✅ AppleScript integration with Apple Notes
-
 ## Building
 
 ```bash
