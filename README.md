@@ -1,6 +1,19 @@
+<img src="cider-logo.png" alt="drawing" width="500"/>
+
 # Cider - Apple Notes CLI
 
 A Go-based CLI tool for syncing markdown files with Apple Notes. This application was translated from [`shakedlokits/cider`](https://github.com/shakedlokits/cider), the original bash-based implementation.
+
+## ⚠️ Important Differences from Bash Version
+
+While maintaining 100% feature parity, the Go version has key differences:
+
+- **macOS only** - Go version only runs on macOS (Apple Notes integration limitation)
+- **Different error handling** - Go version may have stricter validation than bash version
+- **Performance characteristics** - Faster startup, but different memory footprint
+- **Dependency changes** - Requires Go toolchain instead of Bash 5+ and bashly
+
+See [Migration Notes](#migration-notes) for detailed compatibility information.
 
 ## Building
 
