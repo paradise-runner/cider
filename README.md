@@ -1,4 +1,4 @@
-<img src="cider-logo.png" alt="drawing" width="500"/>
+<img src="logo.png" alt="drawing" width="500"/>
 
 # Cider - Apple Notes CLI
 
