@@ -52,6 +52,7 @@ internal/
     push.go           # Push command
     pull.go           # Pull command
     diff.go           # Diff command
+    mix.go            # Mix command (intelligent merge)
   
   frontmatter/        # YAML frontmatter operations
     frontmatter.go
@@ -92,6 +93,9 @@ The Go version has the exact same CLI interface as the bash version:
 
 # Show differences
 ./dist/cider diff my-note.md
+
+# Intelligently merge changes between Markdown and Apple Notes
+./dist/cider mix my-note.md
 
 # Generate shell completions
 ./dist/cider completion bash
