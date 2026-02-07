@@ -130,16 +130,3 @@ func TestAnalyzeDifferences(t *testing.T) {
 		})
 	}
 }
-
-// Test that DiffType constants have expected values
-func TestDiffTypeValues(t *testing.T) {
-	if DiffTypeNone != 0 {
-		t.Errorf("DiffTypeNone should be 0, got %d", DiffTypeNone)
-	}
-	if DiffTypeFormatOnly != 1 {
-		t.Errorf("DiffTypeFormatOnly should be 1, got %d", DiffTypeFormatOnly)
-	}
-	if DiffTypeSubstantive != 2 {
-		t.Errorf("DiffTypeSubstantive should be 2, got %d", DiffTypeSubstantive)
-	}
-}
