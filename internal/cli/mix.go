@@ -115,7 +115,8 @@ func runMix(cmd *cobra.Command, args []string) error {
 	case DiffTypeSubstantive:
 		// Substantive differences that can't be auto-resolved
 		fmt.Println("Conflicting changes detected between Apple Note and Markdown file.")
-		fmt.Println("Showing differences (Apple Note -> Markdown file):\n")
+		fmt.Println("Showing differences (Apple Note -> Markdown file):")
+		fmt.Println()
 		
 		err = showDiff("Apple Notes", filePath, remoteMarkdown, localMarkdown)
 		if err != nil {
@@ -155,16 +156,16 @@ func normalizeContent(content string) string {
 
 // analyzeDifferences determines the type of differences between two contents
 func analyzeDifferences(raw1, raw2, normalized1, normalized2 string) DiffType {
-	// If normalized versions are identical, no substantive differences
+	// If normalized versions are identical
 	if normalized1 == normalized2 {
-		return DiffTypeNone
-	}
-	
-	// If raw versions differ but normalized versions are same, it's formatting only
-	if raw1 != raw2 && normalized1 == normalized2 {
+		// Check if raw versions also match
+		if raw1 == raw2 {
+			return DiffTypeNone
+		}
+		// Raw differs but normalized same = formatting only
 		return DiffTypeFormatOnly
 	}
 	
-	// Otherwise, substantive differences exist
+	// Normalized versions differ = substantive differences
 	return DiffTypeSubstantive
 }
